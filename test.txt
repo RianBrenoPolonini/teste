@@ -1,0 +1,21 @@
+ls -l -> lista permissões, número de entidades (se for diretório, mostra a quantidade de subdiretórios existentes dentro dele; se for arquivo, mostra o número de referências que apontam para o arquivo), dono, grupo, tamanho do arquivo, data e hora da última atualização e o nome do arquivo.
+
+chmod:
+
+0	000	−−−	nenhuma permissão de acesso
+1	001	−−x	permissão de execução
+2	010	-w-	permissão de gravação
+3	011	-wx	permissão de gravação e execução
+4	100	r−−	permissão de leitura
+5	101	r-x	permissão de leitura e execução
+6	110	rw-	permissão de leitura e gravação
+7	111	rwx	permissão de leitura, gravação e execução
+
+
+Edição de timestamp
+
+touch -a -m -t 06012047 test0/
+
+Edição do tamanho
+
+truncate -s 40 testShell00
